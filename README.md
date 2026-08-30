@@ -1,66 +1,79 @@
-# Premium Neon — Portfolio
+# Shanmuga Priyan M — AI & ML Developer Portfolio
 
-A dark, futuristic, premium portfolio for a software engineer.
-Static HTML + CSS + vanilla JS. **No build step, no dependencies.**
+Welcome to my personal portfolio repository! This is a modern, high-performance web application built to showcase my journey, projects, and skills in Artificial Intelligence, Machine Learning, and Web Development.
 
-## Files
+## 🚀 Live Preview
+
+*(Add your live URL here once deployed)*
+
+## ✨ Features
+
+- **Premium Neon Design System:** A dark, futuristic aesthetic — "90% dark interface + 10% neon energy" with neon purple & cyan accents.
+- **Smooth Animations:** Buttery transitions, gradient name treatment, glowing skill tags, and hover motion implemented in vanilla CSS + JS (no framework).
+- **Data-Driven Content:** The UI never hard-codes personal data. All content lives in a single `CONTENT` object — edit one file and the whole site updates.
+- **Automatic Empty States:** Any section without data is hidden — never fabricated, no lorem ipsum.
+- **Project Detail View:** Click any project to open a data-driven detail view with Problem, Approach, Implementation, Challenges, and Learnings.
+- **Fully Responsive:** Carefully crafted to look perfect on desktops, tablets, and mobile devices (mobile hamburger menu included).
+- **Accessibility:** Full `prefers-reduced-motion` support and accessible labels.
+
+## 🛠️ Tech Stack
+
+- **Markup:** HTML5
+- **Styling:** Custom CSS (design system with CSS custom properties)
+- **JavaScript:** Vanilla JS (ES6+), no build step, no dependencies
+- **Fonts:** Inter (editorial) + JetBrains Mono (technical labels)
+
+## 💻 Local Setup & Development
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+No dependencies required. Just any modern web browser (Chrome, Edge, Firefox, Safari).
+
+### Installation
+
+Clone the repository:
 
 ```
-portfolio-quiet/
+git clone https://github.com/shanksraj007-stack/Portfolio.git
+```
+
+Navigate into the project directory:
+
+```
+cd Portfolio
+```
+
+That's it — there's nothing to install.
+
+### Running the App
+
+Open `index.html` directly in your browser (double-click it), or serve the folder if you prefer:
+
+```
+npx serve .
+```
+
+and open `http://localhost:3000` (or the printed URL) in your browser to view the portfolio.
+
+## 📂 Key Project Structure
+
+```
+Portfolio/
 ├── index.html            → page structure + all sections (shell only)
 ├── styles/styles.css     → "Premium Neon" design system
-├── scripts/app.js        → renders content, routing, empty-states, motion
+├── scripts/app.js        → renders content, routing, empty states, motion
 └── content/data.js       → ★ THE ONLY FILE TO EDIT — all personal data
 ```
 
-## Content architecture
+- **`content/data.js`** — the single source of truth. Contains `CONTENT.profile`, `CONTENT.projects[]`, `CONTENT.skills[]`, and `CONTENT.links`. Edit this to update the whole site.
+- **`index.html`** — page shell; never hard-codes personal data.
+- **`styles/styles.css`** — the premium neon design system (tokens, layout, components).
+- **`scripts/app.js`** — render engine that consumes `CONTENT` and builds the UI.
 
-All personal content lives in **`content/data.js`** as a single `CONTENT` object:
+## 📬 Contact
 
-- `CONTENT.profile` — name, title, intro, focus, bio, education, experience, interests, CTA
-- `CONTENT.projects[]` — title, description, technologies, category, image, year, status, github, liveDemo, details
-- `CONTENT.skills[]` — [{ category, technologies[] }]
-- `CONTENT.links` — email, github, linkedin, twitter, website, extra[]
-
-The UI never hard-codes personal data. It only consumes `CONTENT`.
-
-## Empty-state behaviour
-
-This is the core rule. When a field/section has no data, the UI **hides it** —
-never fabricates names, projects, skills, stats, or lorem ipsum. So an empty
-content file renders a clean, intentionally designed page with just the nav
-and footer shell. Sections appear only when their data exists.
-
-## Project detail view
-
-Clicking a project row opens a detail view (URL hash `#project-N`) with
-data-driven sections: Problem, Approach, Implementation, Technologies,
-Challenges, What I Learned. **Missing fields hide their section.** A back
-link returns to the index.
-
-## Design system ("Premium Neon")
-
-Dark futuristic · neon purple + cyan · "90% dark interface + 10% neon energy."
-
-- Background `#050508`, cards `#10101A`, secondary bg `#0A0A12`
-- Text `#F4F4F8`, secondary `#8D8D9B`
-- Accents: neon purple `#A855F7` / electric `#7C3AED`, neon cyan `#22D3EE` / `#06B6D4`
-- Gradient `linear-gradient(90deg, #A855F7, #22D3EE)` for name, headings, borders, buttons
-- Subtle technical grid + soft ambient purple/cyan glows behind content
-- Abstract network-node hero visual (decorative SVG; hidden on small screens)
-- Glass sticky nav (blur) with cyan/purple hover glow; gradient-border CTA buttons
-- Neon section dividers (`✦` accent); horizontal glass project cards with neon hover
-- Skills as glowing pill tags — **no bars, no meters/percentages**
-- Contact with radial glow; footer with social links
-- Inter (editorial) + JetBrains Mono (technical labels)
-- Effects implemented in vanilla CSS/JS (no framework); `prefers-reduced-motion` fully supported
-- Fully responsive; mobile hamburger menu; network visual hidden ≤900px; accessible labels
-
-## How to run
-
-Open `index.html` in any browser. No server required.
-
-## Handing off to a Personal Work Assistant
-
-Edit only `content/data.js`. Fill in real values; leave others empty.
-The portfolio updates automatically — no markup changes needed.
+- Email: *(add your email)*
+- LinkedIn: *(add your LinkedIn)*
+- GitHub: [@shanksraj007-stack](https://github.com/shanksraj007-stack)
