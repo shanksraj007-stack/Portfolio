@@ -287,9 +287,9 @@ const CONTENT = {
 
   /* ------------------------------- LINKS -------------------------------- */
   links: {
-    email: "shanmugapriyan@example.com", // ← replace with real email
-    github: "github.com/shanmugapriyan", // ← replace with real handle
-    linkedin: "linkedin.com/in/shanmugapriyan", // ← replace with real profile
+    email: "shanksraj007@gmail.com",
+    github: "github.com/shanksraj007-stack",
+    linkedin: "linkedin.com/in/shanmuga-priyan-m-82a308388",
     twitter: "",
     website: "",
     extra: []

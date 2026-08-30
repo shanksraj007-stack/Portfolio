@@ -4,7 +4,7 @@ Welcome to my personal portfolio repository! This is a modern, high-performance 
 
 ## 🚀 Live Preview
 
-*(Add your live URL here once deployed)*
+https://shanksraj007-stack.github.io/Portfolio/
 
 ## ✨ Features
 
@@ -74,6 +74,6 @@ Portfolio/
 
 ## 📬 Contact
 
-- Email: *(add your email)*
-- LinkedIn: *(add your LinkedIn)*
+- Email: shanksraj007@gmail.com
+- LinkedIn: [linkedin.com/in/shanmuga-priyan-m-82a308388](https://www.linkedin.com/in/shanmuga-priyan-m-82a308388/)
 - GitHub: [@shanksraj007-stack](https://github.com/shanksraj007-stack)
