@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Software engineer portfolio.">
+  <title>Software Engineer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+
+  <!-- ============================ NAVBAR ============================ -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="./index.html" aria-label="Home">
+        <span id="nav-brand"></span>
+      </a>
+
+      <nav aria-label="Primary">
+        <ul class="nav-links" id="nav-links">
+          <li id="nav-work"><a href="#work">Work</a></li>
+          <li id="nav-about"><a href="#about">About</a></li>
+          <li id="nav-contact"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============================= HERO =========================== -->
+    <section class="hero" id="hero" hidden>
+      <div class="container hero-inner">
+        <div class="hero-inner-text">
+          <p class="eyebrow mono" id="hero-hire" hidden>
+            <span class="status" aria-hidden="true"></span>
+            <span id="hero-hire-label"></span>
+          </p>
+
+          <h1 class="hero-name" id="hero-name"></h1>
+          <p class="hero-title" id="hero-title"></p>
+
+          <p class="hero-intro" id="hero-intro"></p>
+
+          <p class="hero-focus" id="hero-focus" hidden>
+            <span class="mono">Current focus</span>
+            <span class="focus-val" id="hero-focus-val"></span>
+          </p>
+
+          <a class="arrow-link" id="hero-cta" hidden>
+            <span id="hero-cta-label"></span>
+            <span class="aq" aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================ PROJECTS ======================== -->
+    <div class="neon-divider" aria-hidden="true"></div>
+    <section class="section" id="work" hidden>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-head-title" id="work-title"><span class="hint">Selected</span> Work</h2>
+            <p class="section-head-desc" id="work-desc"></p>
+          </div>
+          <span class="section-head-index">01</span>
+        </div>
+
+        <div class="project-list" id="project-list">
+          <!-- project rows rendered by app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= ABOUT ========================== -->
+    <div class="neon-divider" aria-hidden="true"></div>
+    <section class="section" id="about" hidden>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-head-title"><span class="hint">About</span></h2>
+            <p class="section-head-desc" id="about-subtitle"></p>
+          </div>
+          <span class="section-head-index">02</span>
+        </div>
+
+        <div class="about-body reveal" id="about-body">
+          <p id="about-bio" style="max-width:680px;color:var(--text-secondary);font-size:16px;line-height:1.75;"></p>
+
+          <div id="about-extra" style="margin-top:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px;">
+            <div id="about-education" hidden>
+              <h3 class="mono" style="margin-bottom:12px;">Education</h3>
+              <p id="about-education-val" style="color:var(--text-secondary);font-size:14.5px;line-height:1.7;"></p>
+            </div>
+            <div id="about-experience" hidden>
+              <h3 class="mono" style="margin-bottom:12px;">Experience</h3>
+              <p id="about-experience-val" style="color:var(--text-secondary);font-size:14.5px;line-height:1.7;"></p>
+            </div>
+            <div id="about-interests" hidden>
+              <h3 class="mono" style="margin-bottom:12px;">Interests</h3>
+              <p id="about-interests-val" style="color:var(--text-secondary);font-size:14.5px;line-height:1.7;"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================= SKILLS ========================= -->
+    <div class="neon-divider" aria-hidden="true"></div>
+    <section class="section" id="skills" hidden>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-head-title"><span class="hint">Stack</span> &amp; <span class="hint">Skills</span></h2>
+            <p class="section-head-desc" id="skills-desc"></p>
+          </div>
+          <span class="section-head-index">03</span>
+        </div>
+        <div class="skills-list reveal" id="skills-list"><!-- categories --></div>
+      </div>
+    </section>
+
+    <!-- ============================= CONTACT ======================== -->
+    <div class="neon-divider" aria-hidden="true"></div>
+    <section class="section" id="contact" hidden>
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2 class="section-head-title" id="contact-title"><span class="hint">Contact</span></h2>
+            <p class="section-head-desc" id="contact-desc"></p>
+          </div>
+          <span class="section-head-index">04</span>
+        </div>
+        <div class="contact-links reveal" id="contact-links"><!-- links --></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================= FOOTER =========================== -->
+  <footer class="footer" id="footer" hidden>
+    <div class="container footer-inner">
+      <span class="footer-name" id="footer-name"></span>
+      <span class="footer-meta" id="footer-meta"></span>
+      <div class="footer-links" id="footer-links"><!-- social links --></div>
+    </div>
+  </footer>
+
+  <!-- ====================== PROJECT DETAIL ========================== -->
+  <main class="detail-wrap container" id="detail-view" hidden>
+    <a class="detail-back" href="#work" id="detail-back" hidden>
+      <span class="daq" aria-hidden="true">←</span>
+      <span id="detail-back-label">All work</span>
+    </a>
+
+    <div class="detail-head">
+      <h1 class="detail-title" id="detail-title"></h1>
+      <p class="detail-desc" id="detail-desc"></p>
+      <div class="d-tech" id="detail-tech"></div>
+    </div>
+
+    <div class="detail-media" id="detail-media" hidden>
+      <img id="detail-image" alt="">
+    </div>
+
+    <article class="detail-rules">
+      <div class="detail-rule" id="rule-problem" hidden><h2>Problem</h2><div id="rule-problem-body"></div></div>
+      <div class="detail-rule" id="rule-approach" hidden><h2>Approach</h2><div id="rule-approach-body"></div></div>
+      <div class="detail-rule" id="rule-implementation" hidden><h2>Implementation</h2><div id="rule-implementation-body"></div></div>
+      <div class="detail-rule" id="rule-technologies" hidden><h2>Technologies</h2><div id="rule-technologies-body"></div></div>
+      <div class="detail-rule" id="rule-challenges" hidden><h2>Challenges</h2><div id="rule-challenges-body"></div></div>
+      <div class="detail-rule" id="rule-learned" hidden><h2>What I Learned</h2><div id="rule-learned-body"></div></div>
+    </article>
+
+    <div class="detail-actions" id="detail-actions" hidden>
+      <a class="arrow-link" id="detail-github" hidden><span>GitHub</span><span class="aq" aria-hidden="true">↗</span></a>
+      <a class="arrow-link" id="detail-demo" hidden><span>Live demo</span><span class="aq" aria-hidden="true">↗</span></a>
+    </div>
+  </main>
+
+  <!-- Content layer + application logic -->
+  <script src="content/data.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
