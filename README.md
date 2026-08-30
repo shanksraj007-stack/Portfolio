@@ -1,4 +1,4 @@
-# Shanmuga Priyan M — AI & ML Developer Portfolio
+# Shanmuga Priyan M — Software Engineer Portfolio
 
 Welcome to my personal portfolio repository! This is a modern, high-performance web application built to showcase my journey, projects, and skills in Artificial Intelligence, Machine Learning, and Web Development.
 
